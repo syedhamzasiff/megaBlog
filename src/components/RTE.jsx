@@ -15,6 +15,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
         control={control} // Passing the control prop provided by react-hook-form for managing form state
         render={({ field: { onChange } }) => ( // Rendering the Editor component with access to the onChange function
           <Editor
+            apiKey='trj22dl7nioqjtp3281i7cjprv0ow4bi7smb74unyh7hh7s2'
             initialValue={defaultValue} // Setting the initial value of the editor
             init={{
               initialValue: defaultValue, // Setting the initial value again (duplicated)

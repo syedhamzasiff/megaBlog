@@ -5,6 +5,7 @@ import './App.css';
 import { login, logout } from "./store/authSlice"
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import {Outlet}  from 'react-router-dom'
 
 
 
@@ -31,7 +32,7 @@ function App() {
       <div className='w-full block'>
         <Header/>
         <main>
-          {/* Outlet */}
+          <Outlet />
         </main>
         <Footer/>
       </div>
